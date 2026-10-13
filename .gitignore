@@ -1,0 +1,39 @@
+# Local environments, caches and build output
+.venv/
+venv/
+.audit/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Credentials and local/generated databases
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+*.sqlite*
+*.db
+*.db-*
+*.log
+*.tmp
+
+# Keep only final submission evidence, not development runs or scratch logs
+sample_run/*
+!sample_run/decisions.jsonl
+!sample_run/actions.jsonl
+!sample_run/outcomes.jsonl
+!sample_run/latency_report.json
+!sample_run/impact_report.md
+!sample_run/impact_report.json
+!sample_run/final_report.md
+!sample_run/outcome_validation.json
+!sample_run/phase1_audit_before.json
+!sample_run/phase5_pipeline_validation.json
+!sample_run/phase5_restart_check.json
+!sample_run/viewer_state/
+!sample_run/sim/

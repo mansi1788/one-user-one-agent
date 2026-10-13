@@ -1,0 +1,91 @@
+{
+  "missing": [],
+  "files": {
+    "config/goals.json": {
+      "bytes": 5178,
+      "sha256": "7bc1c35368bfe649f5eb387ad4036aae3a770a6670d01fe4f8e7c773d5d35356"
+    },
+    "config/interventions.json": {
+      "bytes": 3349,
+      "sha256": "39da2effef783d04524015a85a91dea5fd254cc6e57d44301ac685ac254824e2"
+    },
+    "config/messaging_policy.md": {
+      "bytes": 1114,
+      "sha256": "1d8d535bde7fd9ebf714e010b3d471ab796bbc66d6e7f4f6449c9aecd7b33f2c"
+    },
+    "config/pricing.json": {
+      "bytes": 372,
+      "sha256": "bcbb2d6acfc3586cde477db30607c724c998b2f8b719295fddbfad253290777e"
+    },
+    "data/catalogue.csv": {
+      "bytes": 374229,
+      "sha256": "31e683a9850e2867c31f69b2e6c329b831580daf377ed3d4ff2c9ab4b0901b8c",
+      "records": 2014
+    },
+    "data/episodes.csv": {
+      "bytes": 1065479,
+      "sha256": "35c2feb85a724721f60f743ba3ed0a0adea27cbe4badfbe420e7ef475b8679b8",
+      "records": 26986
+    },
+    "data/events.jsonl": {
+      "bytes": 55954776,
+      "sha256": "e6fde6415411124b51c62e264f25be620d3dafe64e915baa336e31f373ad05a5",
+      "records": 142906
+    },
+    "data/profiles_snapshot.csv": {
+      "bytes": 623783,
+      "sha256": "ac610156ac026a8adf6b21bf200db821712025fdafed3274af654cf7948e144a",
+      "records": 4888
+    },
+    "pilot/pilot_assignment.csv": {
+      "bytes": 93120,
+      "sha256": "6ab0968bb8ba00a43c0e71a67ceed6ee76623e5635fc3df0cf9184493a930d10"
+    },
+    "pilot/pilot_outcomes.csv": {
+      "bytes": 228603,
+      "sha256": "b6a1ed554937cf0164c40c7e3b1da8c7f67f38e1e4f14d6fc3f1e4a59949bcb5"
+    },
+    "pilot/pilot_summary_report.md": {
+      "bytes": 877,
+      "sha256": "9ccfa366934c8f46ca1201c095bae594b91029dd99b240e5f0bcb070c6a16a88"
+    },
+    "replay/arms.csv": {
+      "bytes": 79987,
+      "sha256": "869fe56cbb3eed81bf73fd94fba5b6d2ed2e84d2feaac465a792940cf5063a51"
+    },
+    "replay/control_events.jsonl": {
+      "bytes": 992,
+      "sha256": "0e46d883bb0aa5a6d1e1a68902a4f4ae81917b49f959ccb1f66697bf50afc933"
+    },
+    "replay/live_events.jsonl": {
+      "bytes": 263700,
+      "sha256": "62a518a6dc7b1809bf14ad139a3c9dac42e1308f7cbf60fdd86ee37dff0432be"
+    },
+    "replay/model_faults.jsonl": {
+      "bytes": 1055,
+      "sha256": "b764e9a6cf877a72e8092e7da6e5e1d714fdcafdbf31f5bcef5338a1a4176491"
+    },
+    "replay/triggers.jsonl": {
+      "bytes": 1123250,
+      "sha256": "94b2342bbcbe50b8d9ac7b3ad21ad74665fa5e454c310d96cf55064355650f9b",
+      "records": 2769
+    },
+    "simulator/simulate_outcomes.py": {
+      "bytes": 19560,
+      "sha256": "1ad2352a3e22a9c82925eedfd48311489b9be61f2d29d834ee346b357d93254c"
+    }
+  },
+  "errors": [],
+  "warnings": [
+    "Device timestamps are untrusted; finite history does not prove lifetime absence.",
+    "G06, G10 and G11 are disabled pending definitions/signals."
+  ],
+  "goals": 12,
+  "duplicate_event_records": 2176,
+  "extra_profile_versions": 30,
+  "unknown_title_references": 0,
+  "unknown_episode_references": 0,
+  "orphan_episode_rows": 0,
+  "trigger_users_without_profile": 103,
+  "valid": true
+}

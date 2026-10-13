@@ -1,0 +1,738 @@
+{
+  "verdict": "READY_WITH_DOCUMENTED_PARTIAL_ITEMS",
+  "unresolved_critical_blockers": [],
+  "scope": "Independent recomputation and clean execution by the same Codex assistant; not a third-party certification",
+  "test_runs": [
+    {
+      "environment": "existing .venv",
+      "command": ".venv/Scripts/python.exe -B -m pytest -q -p no:cacheprovider",
+      "passed": 140,
+      "seconds": 19.11
+    },
+    {
+      "environment": "fresh editable install, Python 3.13.3, pytest 9.1.1",
+      "command": ".audit/venv/Scripts/python.exe -B -m pytest -q -p no:cacheprovider",
+      "passed": 140,
+      "seconds": 45.1
+    }
+  ],
+  "fresh_setup": {
+    "venv": ".audit/venv",
+    "editable_install_succeeded": true,
+    "installed_entry_point_succeeded": true,
+    "pythonpath_unset": true,
+    "python_3_11_syntax_check": true
+  },
+  "required_inventory": {
+    "README.md": {
+      "exists": true,
+      "kind": "file",
+      "bytes": 4136
+    },
+    "ARCHITECTURE.md": {
+      "exists": true,
+      "kind": "file",
+      "bytes": 6279
+    },
+    "AI_COLLABORATION.md": {
+      "exists": true,
+      "kind": "file",
+      "bytes": 2273
+    },
+    "KNOWN_LIMITATIONS.md": {
+      "exists": true,
+      "kind": "file",
+      "bytes": 3803
+    },
+    "src": {
+      "exists": true,
+      "kind": "directory",
+      "bytes": null
+    },
+    "tests": {
+      "exists": true,
+      "kind": "directory",
+      "bytes": null
+    },
+    "sample_run/decisions.jsonl": {
+      "exists": true,
+      "kind": "file",
+      "bytes": 102241958
+    },
+    "sample_run/viewer_state": {
+      "exists": true,
+      "kind": "directory",
+      "bytes": null
+    },
+    "sample_run/actions.jsonl": {
+      "exists": true,
+      "kind": "file",
+      "bytes": 673990
+    },
+    "sample_run/outcomes.jsonl": {
+      "exists": true,
+      "kind": "file",
+      "bytes": 880681
+    },
+    "sample_run/latency_report.json": {
+      "exists": true,
+      "kind": "file",
+      "bytes": 1613
+    },
+    "sample_run/impact_report.md": {
+      "exists": true,
+      "kind": "file",
+      "bytes": 6468
+    },
+    "sample_run/final_report.md": {
+      "exists": true,
+      "kind": "file",
+      "bytes": 3829
+    },
+    "pyproject.toml": {
+      "exists": true,
+      "kind": "file",
+      "bytes": 489
+    }
+  },
+  "sample_independent_checks": {
+    "out": "sample_run",
+    "valid": true,
+    "failures": [],
+    "trigger_deliveries": 2769,
+    "unique_triggers": 2679,
+    "duplicate_deliveries": 90,
+    "triggered_viewers": 1746,
+    "randomized_users": 5000,
+    "actions": 719,
+    "action_viewers": 467,
+    "holdout_actions": 0,
+    "outcome_records": 759,
+    "goal_viewers": 756,
+    "outcome_counts": {
+      "FAILED": 639,
+      "SUCCEEDED": 120
+    },
+    "simulator_events": 31433,
+    "unique_outcome_events": 31429,
+    "incomplete_failed_windows": 0,
+    "attribution_errors": 0,
+    "g03_judgments": 50,
+    "max_publication_latency_seconds": 44.861499,
+    "statistics": {
+      "non_trial_purchase_7d": {
+        "counts": {
+          "agent": {
+            "all_n": 2513,
+            "cohort_n": 863,
+            "cohort_successes": 23,
+            "known_full_successes": 24,
+            "missing": 1649
+          },
+          "holdout": {
+            "all_n": 2487,
+            "cohort_n": 883,
+            "cohort_successes": 31,
+            "known_full_successes": 32,
+            "missing": 1603
+          }
+        },
+        "difference_pp": -0.8456371082990282,
+        "ci95_pp": [
+          -2.52559028889032,
+          0.8126217384007355
+        ],
+        "relative_lift": -0.24087018278323935,
+        "relative_lift_ci95": [
+          -0.5536926554395004,
+          0.2912135245164771
+        ]
+      },
+      "any_play_7d": {
+        "counts": {
+          "agent": {
+            "all_n": 2513,
+            "cohort_n": 863,
+            "cohort_successes": 567,
+            "known_full_successes": 573,
+            "missing": 1644
+          },
+          "holdout": {
+            "all_n": 2487,
+            "cohort_n": 883,
+            "cohort_successes": 563,
+            "known_full_successes": 573,
+            "missing": 1594
+          }
+        },
+        "difference_pp": 1.941133473922907,
+        "ci95_pp": [
+          -2.539357404436825,
+          6.407613947344718
+        ],
+        "relative_lift": 0.03044442020379967,
+        "relative_lift_ci95": [
+          -0.03850569130202364,
+          0.10433904134806626
+        ]
+      }
+    },
+    "viewer_state_files": 1746,
+    "original_pack_unchanged": true
+  },
+  "clean_independent_checks": {
+    "out": ".audit\\clean",
+    "valid": true,
+    "failures": [],
+    "trigger_deliveries": 2769,
+    "unique_triggers": 2679,
+    "duplicate_deliveries": 90,
+    "triggered_viewers": 1746,
+    "randomized_users": 5000,
+    "actions": 719,
+    "action_viewers": 467,
+    "holdout_actions": 0,
+    "outcome_records": 759,
+    "goal_viewers": 756,
+    "outcome_counts": {
+      "FAILED": 639,
+      "SUCCEEDED": 120
+    },
+    "simulator_events": 31433,
+    "unique_outcome_events": 31429,
+    "incomplete_failed_windows": 0,
+    "attribution_errors": 0,
+    "g03_judgments": 50,
+    "max_publication_latency_seconds": 0.868804,
+    "statistics": {
+      "non_trial_purchase_7d": {
+        "counts": {
+          "agent": {
+            "all_n": 2513,
+            "cohort_n": 863,
+            "cohort_successes": 23,
+            "known_full_successes": 24,
+            "missing": 1649
+          },
+          "holdout": {
+            "all_n": 2487,
+            "cohort_n": 883,
+            "cohort_successes": 31,
+            "known_full_successes": 32,
+            "missing": 1603
+          }
+        },
+        "difference_pp": -0.8456371082990282,
+        "ci95_pp": [
+          -2.52559028889032,
+          0.8126217384007355
+        ],
+        "relative_lift": -0.24087018278323935,
+        "relative_lift_ci95": [
+          -0.5536926554395004,
+          0.2912135245164771
+        ]
+      },
+      "any_play_7d": {
+        "counts": {
+          "agent": {
+            "all_n": 2513,
+            "cohort_n": 863,
+            "cohort_successes": 567,
+            "known_full_successes": 573,
+            "missing": 1644
+          },
+          "holdout": {
+            "all_n": 2487,
+            "cohort_n": 883,
+            "cohort_successes": 563,
+            "known_full_successes": 573,
+            "missing": 1594
+          }
+        },
+        "difference_pp": 1.941133473922907,
+        "ci95_pp": [
+          -2.539357404436825,
+          6.407613947344718
+        ],
+        "relative_lift": 0.03044442020379967,
+        "relative_lift_ci95": [
+          -0.03850569130202364,
+          0.10433904134806626
+        ]
+      }
+    },
+    "viewer_state_files": 1746,
+    "original_pack_unchanged": true
+  },
+  "clean_validation": {
+    "valid": true,
+    "sqlite_integrity": "ok",
+    "foreign_key_errors": 0,
+    "simulator_events": 31433,
+    "outcomes": {
+      "FAILED": 639,
+      "SUCCEEDED": 120
+    },
+    "outcome_run_id": "O-8162b801770438fc8814002f463bc934ec0efb017f1ac982f4cffdf4df07665b",
+    "inputs_unchanged": true,
+    "input_hashes": {
+      "data\\catalogue.csv": "31e683a9850e2867c31f69b2e6c329b831580daf377ed3d4ff2c9ab4b0901b8c",
+      "data\\episodes.csv": "35c2feb85a724721f60f743ba3ed0a0adea27cbe4badfbe420e7ef475b8679b8",
+      "data\\events.jsonl": "e6fde6415411124b51c62e264f25be620d3dafe64e915baa336e31f373ad05a5",
+      "data\\profiles_snapshot.csv": "ac610156ac026a8adf6b21bf200db821712025fdafed3274af654cf7948e144a",
+      "config\\goals.json": "7bc1c35368bfe649f5eb387ad4036aae3a770a6670d01fe4f8e7c773d5d35356",
+      "config\\interventions.json": "39da2effef783d04524015a85a91dea5fd254cc6e57d44301ac685ac254824e2",
+      "config\\messaging_policy.md": "1d8d535bde7fd9ebf714e010b3d471ab796bbc66d6e7f4f6449c9aecd7b33f2c",
+      "config\\pricing.json": "bcbb2d6acfc3586cde477db30607c724c998b2f8b719295fddbfad253290777e",
+      "pilot\\pilot_assignment.csv": "6ab0968bb8ba00a43c0e71a67ceed6ee76623e5635fc3df0cf9184493a930d10",
+      "pilot\\pilot_outcomes.csv": "b6a1ed554937cf0164c40c7e3b1da8c7f67f38e1e4f14d6fc3f1e4a59949bcb5",
+      "pilot\\pilot_summary_report.md": "9ccfa366934c8f46ca1201c095bae594b91029dd99b240e5f0bcb070c6a16a88",
+      "replay\\arms.csv": "869fe56cbb3eed81bf73fd94fba5b6d2ed2e84d2feaac465a792940cf5063a51",
+      "replay\\control_events.jsonl": "0e46d883bb0aa5a6d1e1a68902a4f4ae81917b49f959ccb1f66697bf50afc933",
+      "replay\\live_events.jsonl": "62a518a6dc7b1809bf14ad139a3c9dac42e1308f7cbf60fdd86ee37dff0432be",
+      "replay\\model_faults.jsonl": "b764e9a6cf877a72e8092e7da6e5e1d714fdcafdbf31f5bcef5338a1a4176491",
+      "replay\\triggers.jsonl": "94b2342bbcbe50b8d9ac7b3ad21ad74665fa5e454c310d96cf55064355650f9b",
+      "simulator\\simulate_outcomes.py": "1ad2352a3e22a9c82925eedfd48311489b9be61f2d29d834ee346b357d93254c"
+    },
+    "action_validation": {
+      "valid": true,
+      "actions": 719,
+      "decisions": 2769,
+      "pack_unchanged": true,
+      "errors": []
+    },
+    "replay": {
+      "trigger_deliveries": 2769,
+      "unique_triggers": 2679,
+      "duplicates": 90,
+      "actions": 719,
+      "action_types": {
+        "home_page": 719
+      },
+      "no_action_reasons": {
+        "Title variant must match current app language": 323,
+        "Randomized holdout: no agent intervention": 1180,
+        "No available content in the current dialect satisfies this goal": 51,
+        "No measurable goal has proven eligibility": 130,
+        "Potential offline buffering or device clock skew; device time untrusted, request conservatively suppressed": 239,
+        "Current app dialect is unknown": 20,
+        "Store read exceeded bounded client deadline; no publication": 16,
+        "Existing goal retained; current eligibility is unknown": 1
+      },
+      "failures": {
+        "TimeoutError": 16
+      },
+      "processing_seconds": {
+        "p50": 0.09461449994705617,
+        "p95": 0.2057426000246778,
+        "p99": 0.3791915000183508,
+        "max": 0.9020048000384122
+      },
+      "queue_seconds": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0.061984,
+        "max": 0.242348
+      },
+      "total_seconds": {
+        "p50": 0.09568779997061938,
+        "p95": 0.20967020001262426,
+        "p99": 0.3816799999913201,
+        "max": 0.9020048000384122
+      },
+      "publication_latency_seconds": {
+        "p50": 0.150205,
+        "p95": 0.252079,
+        "p99": 0.423035,
+        "max": 0.868804
+      },
+      "exceeding_60_seconds": 0,
+      "exceeding_5_minutes": 0,
+      "live_events": 607,
+      "controls": 4,
+      "settings": {
+        "max_model_calls": 8,
+        "max_tool_calls": 20,
+        "max_seconds": 60,
+        "stale_seconds": 86400,
+        "store_read_timeout": 0.25
+      },
+      "holdout_actions": 0
+    },
+    "simulator": {
+      "seed": "oua-practice",
+      "triggered_users": 1746,
+      "events_written": 31433,
+      "counts": {
+        "actions_total": 719,
+        "home_page_accepted": 719,
+        "home_page_published_but_not_shown": 11,
+        "home_page_shown_personalised": 502,
+        "organic_purchases_scripted": 36
+      },
+      "policy_problems": [],
+      "policy_problem_count": 0
+    },
+    "randomized_users": 5000,
+    "triggered_users": 1746,
+    "required_artifacts_present": true,
+    "viewer_state_count": 1746,
+    "viewer_state_sha256": "830517ec65574563012ab91aafda5f93d1cf96481e221c8abfb692dcc1335c47",
+    "artifact_sha256": {
+      "decisions.jsonl": "4952a6cdf7693770830b2827f8da2b5d5f386c2e10a0524dc3edff28804c4a4d",
+      "actions.jsonl": "9728efc31aa04c971062656eb172796ae10ae308afa993cbb09a2d859263df90",
+      "outcomes.jsonl": "a7ce8cd268cf840434ebc28c590f95467929076211a9dbaa168f9613c2cd1f46",
+      "latency_report.json": "c629348a68e6df40e1a98746a19650a6f37fa68ccfbdc844e5455f84ce26b7e0",
+      "impact_report.md": "03dd3103e93dfbb830e6cc1bdc7ac290218cb1b4e9a5368afb394433b3828d78",
+      "final_report.md": "9aa462be3efae7b3d6afd1d02a76104beb94282f5d6a12985a39efb1e0131792"
+    }
+  },
+  "clean_restart": {
+    "started_without_generated_state": true,
+    "command": [
+      "-B",
+      "-m",
+      "one_agent.cli",
+      "pipeline",
+      "--pack",
+      ".",
+      "--db",
+      ".audit\\clean\\replay.sqlite3",
+      "--out",
+      ".audit\\clean"
+    ],
+    "first_elapsed_seconds": 450.1626350999577,
+    "unchanged": true,
+    "first": {
+      "hashes": {
+        "decisions.jsonl": "4952a6cdf7693770830b2827f8da2b5d5f386c2e10a0524dc3edff28804c4a4d",
+        "actions.jsonl": "9728efc31aa04c971062656eb172796ae10ae308afa993cbb09a2d859263df90",
+        "outcomes.jsonl": "a7ce8cd268cf840434ebc28c590f95467929076211a9dbaa168f9613c2cd1f46",
+        "latency_report.json": "c629348a68e6df40e1a98746a19650a6f37fa68ccfbdc844e5455f84ce26b7e0",
+        "impact_report.md": "03dd3103e93dfbb830e6cc1bdc7ac290218cb1b4e9a5368afb394433b3828d78",
+        "impact_report.json": "a31eade4670cd4782999d5e37b44ac94e77a5597292e3e874fb4d6ad3e4e7175",
+        "final_report.md": "9aa462be3efae7b3d6afd1d02a76104beb94282f5d6a12985a39efb1e0131792",
+        "outcome_validation.json": "008f0c60661c643130d4e38f0efb855c012b91224f037d211362f11dc93a7a69",
+        "phase5_pipeline_validation.json": "4fe43a57b5dfaa768719dd99816aedc3dbd2f292113d1c504b76edb3e0d82621",
+        "sim/outcome_events.jsonl": "25c2ebd4494ab49eab5349c1588cd9115bcfaa9b8911bbf0dc534880ba877f3e",
+        "sim/simulator_report.json": "225c34f1965255f3216ccceeb1ed47c5ea71edbc444757d23e62d8fe7ee97c12",
+        "viewer_state/": "830517ec65574563012ab91aafda5f93d1cf96481e221c8abfb692dcc1335c47"
+      },
+      "counts": {
+        "events": 144009,
+        "profiles": 4888,
+        "facts": 45954,
+        "decisions": 2679,
+        "published_actions": 719,
+        "approvals": 719,
+        "message_reservations": 0,
+        "goals": 759,
+        "plans": 759,
+        "outcome_runs": 1,
+        "goal_outcomes": 759,
+        "viewer_learning": 759
+      }
+    },
+    "second": {
+      "hashes": {
+        "decisions.jsonl": "4952a6cdf7693770830b2827f8da2b5d5f386c2e10a0524dc3edff28804c4a4d",
+        "actions.jsonl": "9728efc31aa04c971062656eb172796ae10ae308afa993cbb09a2d859263df90",
+        "outcomes.jsonl": "a7ce8cd268cf840434ebc28c590f95467929076211a9dbaa168f9613c2cd1f46",
+        "latency_report.json": "c629348a68e6df40e1a98746a19650a6f37fa68ccfbdc844e5455f84ce26b7e0",
+        "impact_report.md": "03dd3103e93dfbb830e6cc1bdc7ac290218cb1b4e9a5368afb394433b3828d78",
+        "impact_report.json": "a31eade4670cd4782999d5e37b44ac94e77a5597292e3e874fb4d6ad3e4e7175",
+        "final_report.md": "9aa462be3efae7b3d6afd1d02a76104beb94282f5d6a12985a39efb1e0131792",
+        "outcome_validation.json": "008f0c60661c643130d4e38f0efb855c012b91224f037d211362f11dc93a7a69",
+        "phase5_pipeline_validation.json": "4fe43a57b5dfaa768719dd99816aedc3dbd2f292113d1c504b76edb3e0d82621",
+        "sim/outcome_events.jsonl": "25c2ebd4494ab49eab5349c1588cd9115bcfaa9b8911bbf0dc534880ba877f3e",
+        "sim/simulator_report.json": "225c34f1965255f3216ccceeb1ed47c5ea71edbc444757d23e62d8fe7ee97c12",
+        "viewer_state/": "830517ec65574563012ab91aafda5f93d1cf96481e221c8abfb692dcc1335c47"
+      },
+      "counts": {
+        "events": 144009,
+        "profiles": 4888,
+        "facts": 45954,
+        "decisions": 2679,
+        "published_actions": 719,
+        "approvals": 719,
+        "message_reservations": 0,
+        "goals": 759,
+        "plans": 759,
+        "outcome_runs": 1,
+        "goal_outcomes": 759,
+        "viewer_learning": 759
+      }
+    }
+  },
+  "sample_restart": {
+    "unchanged": true,
+    "first": {
+      "hashes": {
+        "decisions.jsonl": "a8c5ecb77a17ef3b745d8cb593736c000dc6cd6495772a9f87160be4c2703b4a",
+        "actions.jsonl": "475bec56d709a3fa2d0a7fb462a5fde4a56d9de680b4f96b7fe8d7059904e59b",
+        "outcomes.jsonl": "1d7cb6010beabc7c259c66a4419f07bb177e1473b0fb1352e1c28570b53e07a6",
+        "latency_report.json": "e82d38e1567d431e0dc11cbefc8a9f762950c62e4cb99d88895be756016fa6fc",
+        "impact_report.md": "03dd3103e93dfbb830e6cc1bdc7ac290218cb1b4e9a5368afb394433b3828d78",
+        "impact_report.json": "a31eade4670cd4782999d5e37b44ac94e77a5597292e3e874fb4d6ad3e4e7175",
+        "final_report.md": "6074191a1e8c9c8e903ccd18a0ce81b94f7b6b02fbe5811c31bf2bba315230db",
+        "outcome_validation.json": "5e50ecef7eb5a84f4b65933c9c080d8c9fd5538139bcee5512b1ea1b6b4a6830",
+        "phase5_pipeline_validation.json": "d00433e59f462beff0f6b442131d09c417a522e1ef97eaf1deecbde69a38f2c6",
+        "sim/outcome_events.jsonl": "e47e5f2e3597d7ead522a7342fd7b424e39d3f06485ecec44068e4281a2d12dc",
+        "sim/simulator_report.json": "7125efc6786269862091036f7e78b1ed8a5f687e511026dc678391520338203c",
+        "viewer_state/": "727b7ab87ab4d3c31363327dd4cbb25d8780fb1499f1307fab6c1aa23254c28d"
+      },
+      "counts": {
+        "decisions": 2679,
+        "published_actions": 719,
+        "approvals": 719,
+        "message_reservations": 0,
+        "goals": 759,
+        "plans": 759,
+        "outcome_runs": 3,
+        "goal_outcomes": 2277,
+        "viewer_learning": 2277
+      }
+    },
+    "second": {
+      "hashes": {
+        "decisions.jsonl": "a8c5ecb77a17ef3b745d8cb593736c000dc6cd6495772a9f87160be4c2703b4a",
+        "actions.jsonl": "475bec56d709a3fa2d0a7fb462a5fde4a56d9de680b4f96b7fe8d7059904e59b",
+        "outcomes.jsonl": "1d7cb6010beabc7c259c66a4419f07bb177e1473b0fb1352e1c28570b53e07a6",
+        "latency_report.json": "e82d38e1567d431e0dc11cbefc8a9f762950c62e4cb99d88895be756016fa6fc",
+        "impact_report.md": "03dd3103e93dfbb830e6cc1bdc7ac290218cb1b4e9a5368afb394433b3828d78",
+        "impact_report.json": "a31eade4670cd4782999d5e37b44ac94e77a5597292e3e874fb4d6ad3e4e7175",
+        "final_report.md": "6074191a1e8c9c8e903ccd18a0ce81b94f7b6b02fbe5811c31bf2bba315230db",
+        "outcome_validation.json": "5e50ecef7eb5a84f4b65933c9c080d8c9fd5538139bcee5512b1ea1b6b4a6830",
+        "phase5_pipeline_validation.json": "d00433e59f462beff0f6b442131d09c417a522e1ef97eaf1deecbde69a38f2c6",
+        "sim/outcome_events.jsonl": "e47e5f2e3597d7ead522a7342fd7b424e39d3f06485ecec44068e4281a2d12dc",
+        "sim/simulator_report.json": "7125efc6786269862091036f7e78b1ed8a5f687e511026dc678391520338203c",
+        "viewer_state/": "727b7ab87ab4d3c31363327dd4cbb25d8780fb1499f1307fab6c1aa23254c28d"
+      },
+      "counts": {
+        "decisions": 2679,
+        "published_actions": 719,
+        "approvals": 719,
+        "message_reservations": 0,
+        "goals": 759,
+        "plans": 759,
+        "outcome_runs": 3,
+        "goal_outcomes": 2277,
+        "viewer_learning": 2277
+      }
+    }
+  },
+  "pilot_independent_check": {
+    "counts": {
+      "treatment": [
+        349,
+        1912
+      ],
+      "holdout": [
+        387,
+        1979
+      ]
+    },
+    "difference_pp": -1.3021928999262133,
+    "ci95_pp": [
+      -3.7599016340926745,
+      1.161329789338477
+    ],
+    "matches_report": true
+  },
+  "protected_inputs": {
+    "config/goals.json": {
+      "expected": "7bc1c35368bfe649f5eb387ad4036aae3a770a6670d01fe4f8e7c773d5d35356",
+      "actual": "7bc1c35368bfe649f5eb387ad4036aae3a770a6670d01fe4f8e7c773d5d35356"
+    },
+    "config/interventions.json": {
+      "expected": "39da2effef783d04524015a85a91dea5fd254cc6e57d44301ac685ac254824e2",
+      "actual": "39da2effef783d04524015a85a91dea5fd254cc6e57d44301ac685ac254824e2"
+    },
+    "config/messaging_policy.md": {
+      "expected": "1d8d535bde7fd9ebf714e010b3d471ab796bbc66d6e7f4f6449c9aecd7b33f2c",
+      "actual": "1d8d535bde7fd9ebf714e010b3d471ab796bbc66d6e7f4f6449c9aecd7b33f2c"
+    },
+    "config/pricing.json": {
+      "expected": "bcbb2d6acfc3586cde477db30607c724c998b2f8b719295fddbfad253290777e",
+      "actual": "bcbb2d6acfc3586cde477db30607c724c998b2f8b719295fddbfad253290777e"
+    },
+    "data/catalogue.csv": {
+      "expected": "31e683a9850e2867c31f69b2e6c329b831580daf377ed3d4ff2c9ab4b0901b8c",
+      "actual": "31e683a9850e2867c31f69b2e6c329b831580daf377ed3d4ff2c9ab4b0901b8c"
+    },
+    "data/episodes.csv": {
+      "expected": "35c2feb85a724721f60f743ba3ed0a0adea27cbe4badfbe420e7ef475b8679b8",
+      "actual": "35c2feb85a724721f60f743ba3ed0a0adea27cbe4badfbe420e7ef475b8679b8"
+    },
+    "data/events.jsonl": {
+      "expected": "e6fde6415411124b51c62e264f25be620d3dafe64e915baa336e31f373ad05a5",
+      "actual": "e6fde6415411124b51c62e264f25be620d3dafe64e915baa336e31f373ad05a5"
+    },
+    "data/profiles_snapshot.csv": {
+      "expected": "ac610156ac026a8adf6b21bf200db821712025fdafed3274af654cf7948e144a",
+      "actual": "ac610156ac026a8adf6b21bf200db821712025fdafed3274af654cf7948e144a"
+    },
+    "pilot/pilot_assignment.csv": {
+      "expected": "6ab0968bb8ba00a43c0e71a67ceed6ee76623e5635fc3df0cf9184493a930d10",
+      "actual": "6ab0968bb8ba00a43c0e71a67ceed6ee76623e5635fc3df0cf9184493a930d10"
+    },
+    "pilot/pilot_outcomes.csv": {
+      "expected": "b6a1ed554937cf0164c40c7e3b1da8c7f67f38e1e4f14d6fc3f1e4a59949bcb5",
+      "actual": "b6a1ed554937cf0164c40c7e3b1da8c7f67f38e1e4f14d6fc3f1e4a59949bcb5"
+    },
+    "pilot/pilot_summary_report.md": {
+      "expected": "9ccfa366934c8f46ca1201c095bae594b91029dd99b240e5f0bcb070c6a16a88",
+      "actual": "9ccfa366934c8f46ca1201c095bae594b91029dd99b240e5f0bcb070c6a16a88"
+    },
+    "replay/arms.csv": {
+      "expected": "869fe56cbb3eed81bf73fd94fba5b6d2ed2e84d2feaac465a792940cf5063a51",
+      "actual": "869fe56cbb3eed81bf73fd94fba5b6d2ed2e84d2feaac465a792940cf5063a51"
+    },
+    "replay/control_events.jsonl": {
+      "expected": "0e46d883bb0aa5a6d1e1a68902a4f4ae81917b49f959ccb1f66697bf50afc933",
+      "actual": "0e46d883bb0aa5a6d1e1a68902a4f4ae81917b49f959ccb1f66697bf50afc933"
+    },
+    "replay/live_events.jsonl": {
+      "expected": "62a518a6dc7b1809bf14ad139a3c9dac42e1308f7cbf60fdd86ee37dff0432be",
+      "actual": "62a518a6dc7b1809bf14ad139a3c9dac42e1308f7cbf60fdd86ee37dff0432be"
+    },
+    "replay/model_faults.jsonl": {
+      "expected": "b764e9a6cf877a72e8092e7da6e5e1d714fdcafdbf31f5bcef5338a1a4176491",
+      "actual": "b764e9a6cf877a72e8092e7da6e5e1d714fdcafdbf31f5bcef5338a1a4176491"
+    },
+    "replay/triggers.jsonl": {
+      "expected": "94b2342bbcbe50b8d9ac7b3ad21ad74665fa5e454c310d96cf55064355650f9b",
+      "actual": "94b2342bbcbe50b8d9ac7b3ad21ad74665fa5e454c310d96cf55064355650f9b"
+    },
+    "simulator/simulate_outcomes.py": {
+      "expected": "1ad2352a3e22a9c82925eedfd48311489b9be61f2d29d834ee346b357d93254c",
+      "actual": "1ad2352a3e22a9c82925eedfd48311489b9be61f2d29d834ee346b357d93254c"
+    }
+  },
+  "max_actual_model_calls": 1,
+  "max_actual_tool_calls": 11,
+  "safety_indexes": [
+    "one_open_goal",
+    "one_active_plan",
+    "message_slot"
+  ],
+  "commit_candidate_scan": {
+    "git_root": "C:/Users/Raghav/Downloads/one_user_one_agent_data_pack/one_user_one_agent_pack",
+    "tracked_files": 0,
+    "candidate_files": 1813,
+    "candidate_bytes": 180928765,
+    "secrets_found": [],
+    "oversize_files": [],
+    "forbidden_candidates": [],
+    "ignored_checks": {
+      ".venv/pyvenv.cfg": true,
+      ".audit/venv/pyvenv.cfg": true,
+      "sample_run/replay.sqlite3": true,
+      "sample_run/replay_interrupted.sqlite3": true,
+      "sample_run/replay_uninterrupted.sqlite3": true,
+      "sample_run/viewer_memory.sqlite3": true,
+      "src/one_agent.egg-info/PKG-INFO": true,
+      "sample_run/phase4_interrupted_latency_report.json": true
+    },
+    "scan_scope": "Actual Git commit candidates; regex checks for private keys, AWS/OpenAI/GitHub token shapes and assigned secret literals. Heuristic scanning cannot prove absence of arbitrary unknown secrets."
+  },
+  "actual_environment_failures": [
+    {
+      "stage": "initial sandbox virtual environment creation",
+      "error": "ensurepip failed; setup succeeded with approved local execution"
+    },
+    {
+      "error": "sqlite3.OperationalError: database or disk is full",
+      "stage": "Persisting simulator outcome deliveries",
+      "initial_clean_directory": ".audit/clean",
+      "replay": {
+        "trigger_deliveries": 2769,
+        "unique_triggers": 2679,
+        "duplicates": 90,
+        "actions": 719,
+        "action_types": {
+          "home_page": 719
+        },
+        "no_action_reasons": {
+          "Title variant must match current app language": 323,
+          "Randomized holdout: no agent intervention": 1180,
+          "No available content in the current dialect satisfies this goal": 51,
+          "No measurable goal has proven eligibility": 130,
+          "Potential offline buffering or device clock skew; device time untrusted, request conservatively suppressed": 239,
+          "Current app dialect is unknown": 20,
+          "Store read exceeded bounded client deadline; no publication": 16,
+          "Existing goal retained; current eligibility is unknown": 1
+        },
+        "failures": {
+          "TimeoutError": 16
+        },
+        "processing_seconds": {
+          "p50": 0.21205360000021756,
+          "p95": 0.44185589998960495,
+          "p99": 0.5869604999898002,
+          "max": 0.8093145000748336
+        },
+        "queue_seconds": {
+          "p50": 0,
+          "p95": 0,
+          "p99": 0.277821,
+          "max": 0.921028
+        },
+        "total_seconds": {
+          "p50": 0.21564790001139045,
+          "p95": 0.46844029997009784,
+          "p99": 0.6650819000788033,
+          "max": 1.0936432999326586
+        },
+        "publication_latency_seconds": {
+          "p50": 0.346161,
+          "p95": 0.537651,
+          "p99": 0.678022,
+          "max": 0.796978
+        },
+        "exceeding_60_seconds": 0,
+        "exceeding_5_minutes": 0,
+        "live_events": 607,
+        "controls": 4,
+        "settings": {
+          "max_model_calls": 8,
+          "max_tool_calls": 20,
+          "max_seconds": 60,
+          "stale_seconds": 86400,
+          "store_read_timeout": 0.25
+        },
+        "holdout_actions": 0
+      }
+    }
+  ],
+  "critical_fixes": [
+    "Initialized project-local Git metadata instead of home-directory repository",
+    "Added environment/database/secret/scratch ignore rules",
+    "Preserved source/evidence bytes through Git attributes",
+    "Compacted decision JSON without removing values; final file 102241958 bytes",
+    "Removed only redundant historical replay databases and failed scratch run after verified workspace path checks; retried from empty state"
+  ],
+  "partial_items": [
+    "Sixteen safe store-timeout envelopes omit the ordinary confidence/fact/assumption block",
+    "Mock consulted on deterministic/holdout paths without reducing uncertainty",
+    "Model/store timing emulation is not a realistic backend distribution",
+    "Automatic live follow-up-to-replanning reconciliation is unfinished",
+    "True device chronology and individual causal effects are unidentifiable",
+    "Human effort/deadline and production-scale capacity were not independently demonstrated"
+  ],
+  "statistics_scope": "Full-population ITT retains all randomized users and reports missingness/bounds; shared selected-goal impact not estimable; fixed-triggered-cohort event estimates use common seven-day windows; both difference CIs include zero",
+  "commit_action": "Nothing staged or committed; exact local commands in FINAL_AUDIT.md",
+  "final_commit_scan": {
+    "candidate_files": 1815,
+    "recognized_secret_matches": [],
+    "forbidden_candidates": [],
+    "oversize_files": [],
+    "tracked_or_staged_files": 0,
+    "largest_candidate": {
+      "path": "sample_run/decisions.jsonl",
+      "bytes": 102241958
+    },
+    "new_audit_documents_included": true
+  }
+}

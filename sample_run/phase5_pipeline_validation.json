@@ -1,0 +1,123 @@
+{
+  "valid": true,
+  "sqlite_integrity": "ok",
+  "foreign_key_errors": 0,
+  "simulator_events": 31433,
+  "outcomes": {
+    "FAILED": 639,
+    "SUCCEEDED": 120
+  },
+  "outcome_run_id": "O-a269590a634d50251a9898f994f524b7cb7a4f734574daa6f458fd8d6a231e69",
+  "inputs_unchanged": true,
+  "input_hashes": {
+    "data\\catalogue.csv": "31e683a9850e2867c31f69b2e6c329b831580daf377ed3d4ff2c9ab4b0901b8c",
+    "data\\episodes.csv": "35c2feb85a724721f60f743ba3ed0a0adea27cbe4badfbe420e7ef475b8679b8",
+    "data\\events.jsonl": "e6fde6415411124b51c62e264f25be620d3dafe64e915baa336e31f373ad05a5",
+    "data\\profiles_snapshot.csv": "ac610156ac026a8adf6b21bf200db821712025fdafed3274af654cf7948e144a",
+    "config\\goals.json": "7bc1c35368bfe649f5eb387ad4036aae3a770a6670d01fe4f8e7c773d5d35356",
+    "config\\interventions.json": "39da2effef783d04524015a85a91dea5fd254cc6e57d44301ac685ac254824e2",
+    "config\\messaging_policy.md": "1d8d535bde7fd9ebf714e010b3d471ab796bbc66d6e7f4f6449c9aecd7b33f2c",
+    "config\\pricing.json": "bcbb2d6acfc3586cde477db30607c724c998b2f8b719295fddbfad253290777e",
+    "pilot\\pilot_assignment.csv": "6ab0968bb8ba00a43c0e71a67ceed6ee76623e5635fc3df0cf9184493a930d10",
+    "pilot\\pilot_outcomes.csv": "b6a1ed554937cf0164c40c7e3b1da8c7f67f38e1e4f14d6fc3f1e4a59949bcb5",
+    "pilot\\pilot_summary_report.md": "9ccfa366934c8f46ca1201c095bae594b91029dd99b240e5f0bcb070c6a16a88",
+    "replay\\arms.csv": "869fe56cbb3eed81bf73fd94fba5b6d2ed2e84d2feaac465a792940cf5063a51",
+    "replay\\control_events.jsonl": "0e46d883bb0aa5a6d1e1a68902a4f4ae81917b49f959ccb1f66697bf50afc933",
+    "replay\\live_events.jsonl": "62a518a6dc7b1809bf14ad139a3c9dac42e1308f7cbf60fdd86ee37dff0432be",
+    "replay\\model_faults.jsonl": "b764e9a6cf877a72e8092e7da6e5e1d714fdcafdbf31f5bcef5338a1a4176491",
+    "replay\\triggers.jsonl": "94b2342bbcbe50b8d9ac7b3ad21ad74665fa5e454c310d96cf55064355650f9b",
+    "simulator\\simulate_outcomes.py": "1ad2352a3e22a9c82925eedfd48311489b9be61f2d29d834ee346b357d93254c"
+  },
+  "action_validation": {
+    "valid": true,
+    "actions": 719,
+    "decisions": 2769,
+    "pack_unchanged": true,
+    "errors": []
+  },
+  "replay": {
+    "trigger_deliveries": 2769,
+    "unique_triggers": 2679,
+    "duplicates": 90,
+    "actions": 719,
+    "action_types": {
+      "home_page": 719
+    },
+    "no_action_reasons": {
+      "Title variant must match current app language": 323,
+      "Randomized holdout: no agent intervention": 1180,
+      "No available content in the current dialect satisfies this goal": 51,
+      "No measurable goal has proven eligibility": 130,
+      "Potential offline buffering or device clock skew; device time untrusted, request conservatively suppressed": 239,
+      "Current app dialect is unknown": 20,
+      "Store read exceeded bounded client deadline; no publication": 16,
+      "Existing goal retained; current eligibility is unknown": 1
+    },
+    "failures": {
+      "TimeoutError": 16
+    },
+    "processing_seconds": {
+      "p50": 0.12362049997318536,
+      "p95": 0.30593570007476956,
+      "p99": 0.47350140009075403,
+      "max": 44.89158709999174
+    },
+    "queue_seconds": {
+      "p50": 0,
+      "p95": 0,
+      "p99": 0.177105,
+      "max": 37.162587
+    },
+    "total_seconds": {
+      "p50": 0.12449309998191893,
+      "p95": 0.32803650002460927,
+      "p99": 0.5258619000446871,
+      "max": 44.89158709999174
+    },
+    "publication_latency_seconds": {
+      "p50": 0.188227,
+      "p95": 0.367315,
+      "p99": 0.560551,
+      "max": 44.861499
+    },
+    "exceeding_60_seconds": 0,
+    "exceeding_5_minutes": 0,
+    "live_events": 607,
+    "controls": 4,
+    "settings": {
+      "max_model_calls": 8,
+      "max_tool_calls": 20,
+      "max_seconds": 60,
+      "stale_seconds": 86400,
+      "store_read_timeout": 0.25
+    },
+    "holdout_actions": 0
+  },
+  "simulator": {
+    "seed": "oua-practice",
+    "triggered_users": 1746,
+    "events_written": 31433,
+    "counts": {
+      "actions_total": 719,
+      "home_page_accepted": 719,
+      "home_page_published_but_not_shown": 11,
+      "home_page_shown_personalised": 501,
+      "organic_purchases_scripted": 36
+    },
+    "policy_problems": [],
+    "policy_problem_count": 0
+  },
+  "randomized_users": 5000,
+  "triggered_users": 1746,
+  "required_artifacts_present": true,
+  "viewer_state_count": 1746,
+  "viewer_state_sha256": "727b7ab87ab4d3c31363327dd4cbb25d8780fb1499f1307fab6c1aa23254c28d",
+  "artifact_sha256": {
+    "decisions.jsonl": "a8c5ecb77a17ef3b745d8cb593736c000dc6cd6495772a9f87160be4c2703b4a",
+    "actions.jsonl": "475bec56d709a3fa2d0a7fb462a5fde4a56d9de680b4f96b7fe8d7059904e59b",
+    "outcomes.jsonl": "1d7cb6010beabc7c259c66a4419f07bb177e1473b0fb1352e1c28570b53e07a6",
+    "latency_report.json": "e82d38e1567d431e0dc11cbefc8a9f762950c62e4cb99d88895be756016fa6fc",
+    "impact_report.md": "03dd3103e93dfbb830e6cc1bdc7ac290218cb1b4e9a5368afb394433b3828d78",
+    "final_report.md": "6074191a1e8c9c8e903ccd18a0ce81b94f7b6b02fbe5811c31bf2bba315230db"
+  }
+}

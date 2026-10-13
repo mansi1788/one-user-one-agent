@@ -1,0 +1,57 @@
+{
+  "unchanged": true,
+  "first": {
+    "hashes": {
+      "decisions.jsonl": "a8c5ecb77a17ef3b745d8cb593736c000dc6cd6495772a9f87160be4c2703b4a",
+      "actions.jsonl": "475bec56d709a3fa2d0a7fb462a5fde4a56d9de680b4f96b7fe8d7059904e59b",
+      "outcomes.jsonl": "1d7cb6010beabc7c259c66a4419f07bb177e1473b0fb1352e1c28570b53e07a6",
+      "latency_report.json": "e82d38e1567d431e0dc11cbefc8a9f762950c62e4cb99d88895be756016fa6fc",
+      "impact_report.md": "03dd3103e93dfbb830e6cc1bdc7ac290218cb1b4e9a5368afb394433b3828d78",
+      "impact_report.json": "a31eade4670cd4782999d5e37b44ac94e77a5597292e3e874fb4d6ad3e4e7175",
+      "final_report.md": "6074191a1e8c9c8e903ccd18a0ce81b94f7b6b02fbe5811c31bf2bba315230db",
+      "outcome_validation.json": "5e50ecef7eb5a84f4b65933c9c080d8c9fd5538139bcee5512b1ea1b6b4a6830",
+      "phase5_pipeline_validation.json": "d00433e59f462beff0f6b442131d09c417a522e1ef97eaf1deecbde69a38f2c6",
+      "sim/outcome_events.jsonl": "e47e5f2e3597d7ead522a7342fd7b424e39d3f06485ecec44068e4281a2d12dc",
+      "sim/simulator_report.json": "7125efc6786269862091036f7e78b1ed8a5f687e511026dc678391520338203c",
+      "viewer_state/": "727b7ab87ab4d3c31363327dd4cbb25d8780fb1499f1307fab6c1aa23254c28d"
+    },
+    "counts": {
+      "decisions": 2679,
+      "published_actions": 719,
+      "approvals": 719,
+      "message_reservations": 0,
+      "goals": 759,
+      "plans": 759,
+      "outcome_runs": 3,
+      "goal_outcomes": 2277,
+      "viewer_learning": 2277
+    }
+  },
+  "second": {
+    "hashes": {
+      "decisions.jsonl": "a8c5ecb77a17ef3b745d8cb593736c000dc6cd6495772a9f87160be4c2703b4a",
+      "actions.jsonl": "475bec56d709a3fa2d0a7fb462a5fde4a56d9de680b4f96b7fe8d7059904e59b",
+      "outcomes.jsonl": "1d7cb6010beabc7c259c66a4419f07bb177e1473b0fb1352e1c28570b53e07a6",
+      "latency_report.json": "e82d38e1567d431e0dc11cbefc8a9f762950c62e4cb99d88895be756016fa6fc",
+      "impact_report.md": "03dd3103e93dfbb830e6cc1bdc7ac290218cb1b4e9a5368afb394433b3828d78",
+      "impact_report.json": "a31eade4670cd4782999d5e37b44ac94e77a5597292e3e874fb4d6ad3e4e7175",
+      "final_report.md": "6074191a1e8c9c8e903ccd18a0ce81b94f7b6b02fbe5811c31bf2bba315230db",
+      "outcome_validation.json": "5e50ecef7eb5a84f4b65933c9c080d8c9fd5538139bcee5512b1ea1b6b4a6830",
+      "phase5_pipeline_validation.json": "d00433e59f462beff0f6b442131d09c417a522e1ef97eaf1deecbde69a38f2c6",
+      "sim/outcome_events.jsonl": "e47e5f2e3597d7ead522a7342fd7b424e39d3f06485ecec44068e4281a2d12dc",
+      "sim/simulator_report.json": "7125efc6786269862091036f7e78b1ed8a5f687e511026dc678391520338203c",
+      "viewer_state/": "727b7ab87ab4d3c31363327dd4cbb25d8780fb1499f1307fab6c1aa23254c28d"
+    },
+    "counts": {
+      "decisions": 2679,
+      "published_actions": 719,
+      "approvals": 719,
+      "message_reservations": 0,
+      "goals": 759,
+      "plans": 759,
+      "outcome_runs": 3,
+      "goal_outcomes": 2277,
+      "viewer_learning": 2277
+    }
+  }
+}

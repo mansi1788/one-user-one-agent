@@ -1,0 +1,58 @@
+{
+  "trigger_deliveries": 2769,
+  "unique_triggers": 2679,
+  "duplicates": 90,
+  "actions": 719,
+  "action_types": {
+    "home_page": 719
+  },
+  "no_action_reasons": {
+    "Title variant must match current app language": 323,
+    "Randomized holdout: no agent intervention": 1180,
+    "No available content in the current dialect satisfies this goal": 51,
+    "No measurable goal has proven eligibility": 130,
+    "Potential offline buffering or device clock skew; device time untrusted, request conservatively suppressed": 239,
+    "Current app dialect is unknown": 20,
+    "Store read exceeded bounded client deadline; no publication": 16,
+    "Existing goal retained; current eligibility is unknown": 1
+  },
+  "failures": {
+    "TimeoutError": 16
+  },
+  "processing_seconds": {
+    "p50": 0.12362049997318536,
+    "p95": 0.30593570007476956,
+    "p99": 0.47350140009075403,
+    "max": 44.89158709999174
+  },
+  "queue_seconds": {
+    "p50": 0,
+    "p95": 0,
+    "p99": 0.177105,
+    "max": 37.162587
+  },
+  "total_seconds": {
+    "p50": 0.12449309998191893,
+    "p95": 0.32803650002460927,
+    "p99": 0.5258619000446871,
+    "max": 44.89158709999174
+  },
+  "publication_latency_seconds": {
+    "p50": 0.188227,
+    "p95": 0.367315,
+    "p99": 0.560551,
+    "max": 44.861499
+  },
+  "exceeding_60_seconds": 0,
+  "exceeding_5_minutes": 0,
+  "live_events": 607,
+  "controls": 4,
+  "settings": {
+    "max_model_calls": 8,
+    "max_tool_calls": 20,
+    "max_seconds": 60,
+    "stale_seconds": 86400,
+    "store_read_timeout": 0.25
+  },
+  "holdout_actions": 0
+}

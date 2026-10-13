@@ -1,0 +1,2 @@
+# Source and evidence manifests use byte hashes; preserve exact checkout bytes.
+* -text
